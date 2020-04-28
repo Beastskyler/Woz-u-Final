@@ -1,0 +1,23 @@
+* {
+    background-color: black;
+    color: white;
+}
+
+.image-grid-container {
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+  }
+  
+.image-grid {
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+.image-grid-item {
+    width: 20%;
+    height: 100%;
+    background-color: teal;
+}
