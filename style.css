@@ -24,6 +24,7 @@ h1{
 .image-grid-item {
     width: 250px;
     height: 250px;
+    margin: 20px 20px;
     background-color: teal;
 }
 
