@@ -14,6 +14,7 @@ gitHubRequest.onreadystatechange = function () {
     gitObject.forEach(element => {
       let repo = document.createElement("a");
       repo.setAttribute('href', element.html_url);
+      repo.setAttribute('target', '_blank');
       repo.innerHTML = element.name;
       document.getElementById('repos').appendChild(repo);
     });
