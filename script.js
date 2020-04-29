@@ -1,9 +1,9 @@
 $(document).ready(function () {
   $('img').hover(function () {
-    $(this).css("width", "25%");
+    $(this).css("width", "275px");
   },
     function () {
-      $(this).css("width", "20%");
+      $(this).css("width", "250px");
     });
 });
 
