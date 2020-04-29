@@ -12,7 +12,10 @@ gitHubRequest.onreadystatechange = function () {
   if (this.readyState == 4 && this.status == 200) {
     let gitObject = JSON.parse(this.responseText);
     gitObject.forEach(element => {
-      document.getElementById("gitBio").innerHTML += element.name;
+      let repo = document.createElement("a");
+      repo.setAttribute('href', element.html_url);
+      repo.innerHTML = element.name;
+      document.getElementById('repos').appendChild(repo);
     });
   }
 };
