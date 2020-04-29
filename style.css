@@ -22,10 +22,11 @@
     background-color: teal;
 }
 
-img{
-  width: 20%;
-}
-
 #footer{
   background-color: brown;
+}
+
+#footer img{
+  width: 20%;
+  height: 20%;
 }
