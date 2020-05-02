@@ -1,9 +1,9 @@
 $(document).ready(function () {
   $('img').hover(function () {
-    $(this).css("width", "275px");
+    $(this).css("width", "+=25px");
   },
     function () {
-      $(this).css("width", "250px");
+      $(this).css("width", "-=25px");
     });
 });
 
@@ -16,6 +16,8 @@ gitHubRequest.onreadystatechange = function () {
       repo.setAttribute('href', element.html_url);
       repo.setAttribute('target', '_blank');
       repo.innerHTML = element.name;
+      let bre = document.createElement('br');
+      document.getElementById('repos').appendChild(bre);
       document.getElementById('repos').appendChild(repo);
     });
   }
