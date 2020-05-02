@@ -1,6 +1,11 @@
-* {
+body {
     background-color: black;
     color: white;
+}
+
+#page{
+  display: flex;
+  justify-content: flex-end;
 }
 
 h1{
@@ -38,15 +43,21 @@ h1{
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: red;
+  background-color: cornflowerblue;
   display: flex;
   justify-content: space-between;
+  padding: 5px 5px;
 }
 
 
 #footer #email{
   display: flex;
   align-items: flex-start;
+  align-items: center;
+}
+#footer #email p{
+  padding-left: 5px;
+  font-size: 25px;
 }
 
 #footer #email img{
@@ -56,7 +67,7 @@ h1{
   align-items: flex-start;
 }
 
-#footer #something img{
+#footer #links img{
   width: 100px;
   height: auto;
 }
